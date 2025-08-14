@@ -6,14 +6,14 @@ export default function TweetsPage() {
   const tweets = [
     { id: 1, image: "/FB-img1.jpg", link: "https://www.facebook.com/share/p/1B8LeDrP5g/" },
     { id: 2, image: "/FB-img2.jpg", link: "https://www.facebook.com/share/163g11BMfZ/" },
-    { id: 3, image: "/X-img1.jpg", link: "https://twitter.com/..." },
-    { id: 4, image: "/X-analytics1.jpg", link: "https://twitter.com/..." },
-    { id: 5, image: "/X-img2.jpg", link: "https://twitter.com/..." },
-    { id: 6, image: "/X-analytics2.jpg", link: "https://twitter.com/..." },
-    { id: 7, image: "/X-img3.jpg", link: "https://twitter.com/..." },
-    { id: 8, image: "/X-img4.jpg", link: "https://twitter.com/..." },
-    { id: 9, image: "/X-img5.jpg", link: "https://twitter.com/..." },
-    { id: 10, image: "/X-analytics3.jpg", link: "https://twitter.com/..." },
+    { id: 3, image: "/X-img1.jpg", link: "N/A" },
+    { id: 4, image: "/X-Analytics1.jpg", link: "N/A" },
+    { id: 5, image: "/X-img2.jpg", link: "N/A" },
+    { id: 6, image: "/X-Analytics2.jpg", link: "N/A." },
+    { id: 7, image: "/X-img3.jpg", link: "N/A" },
+    { id: 8, image: "/X-img4.jpg", link: "N/A" },
+    { id: 9, image: "/X-img5.jpg", link: "N/A" },
+    { id: 10, image: "/X-Analytics3.jpg", link: "N/A" },
   ];
 
   return (
@@ -42,16 +42,18 @@ export default function TweetsPage() {
                   />
                 </div>
               </CardContent>
-              <CardFooter className="pt-4 flex justify-center">
-                <Link
-                  href={tweet.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-primary hover:underline"
-                >
-                  View more
-                </Link>
-              </CardFooter>
+              {tweet.link && tweet.link !== "N/A" && tweet.link !== "N/A." && (
+                <CardFooter className="pt-4 flex justify-center">
+                  <Link
+                    href={tweet.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-primary hover:underline"
+                  >
+                    View more
+                  </Link>
+                </CardFooter>
+              )}
             </Card>
           ))}
         </div>

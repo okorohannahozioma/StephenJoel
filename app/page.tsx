@@ -5,11 +5,13 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { HeroWavyBackground } from "@/components/hero-wavy-background"
 import { NumberCounter } from "@/components/number-counter"
 import { TestimonialsCarousel } from "@/components/testimonials-carousel"
+import { SlideInSection } from "@/components/slide-in-section";
 
 export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
+      <SlideInSection>
       <section
         id="hero"
         className="relative w-full py-24 md:py-32 lg:py-48 flex items-center justify-center min-h-[80vh] overflow-hidden"
@@ -56,8 +58,11 @@ export default function HomePage() {
   </div>
 </div>
       </section>
+      </SlideInSection>
+
 
       {/* Services Section */}
+      <SlideInSection delay={0.1}>
       <section id="services" className="w-full py-16 md:py-24 lg:py-32 bg-background text-foreground">
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12 text-gradient-primary">
@@ -80,7 +85,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Shape compelling narratives that connect deeply with your audience.
+                  Shaping compelling narratives that connect deeply with your audience.
                 </p>
               </CardContent>
             </Card>
@@ -100,7 +105,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Handle posting, engagement, and community building across platforms.
+                  Handling posting, engagement, and community building across platforms.
                 </p>
               </CardContent>
             </Card>
@@ -110,7 +115,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Plan and execute content that keeps audiences coming back.
+                  Planning and executing content that keeps audiences coming back.
                 </p>
               </CardContent>
             </Card>
@@ -120,19 +125,22 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Track, measure, and translate data into actionable growth insights.
+                  Tracking, measuring, and translating data into actionable growth insights.
                 </p>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
+      </SlideInSection>
+
 
       {/* Numbers Section */}
+      <SlideInSection delay={0.2}>
       <section id="numbers" className="w-full py-16 md:py-24 lg:py-32 bg-secondary text-foreground">
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12 text-gradient-primary">
-            The Numbers Don't Lie
+            Not Just Words, See The Numbers
           </h2>
           <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-3 max-w-4xl mx-auto">
             <Card className="bg-card border-secondary rounded-lg p-6 text-center">
@@ -146,7 +154,7 @@ export default function HomePage() {
             <Card className="bg-card border-secondary rounded-lg p-6 text-center">
               <CardContent className="flex flex-col items-center justify-center h-full">
                 <div className="text-6xl font-extrabold mb-2">
-                  <NumberCounter target={250} suffix="+" />
+                  <NumberCounter target={74} suffix="k+" />
                 </div>
                 <p className="text-muted-foreground text-lg">Followers</p>
               </CardContent>
@@ -170,8 +178,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </SlideInSection>
 
       {/* Testimonials Section */}
+      <SlideInSection delay={0.2}>
       <section id="testimonials" className="w-full py-16 md:py-24 lg:py-32 bg-background text-foreground">
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12 text-gradient-primary">
@@ -180,8 +190,11 @@ export default function HomePage() {
           <TestimonialsCarousel />
         </div>
       </section>
+      </SlideInSection>
+
 
       {/* Call to Action Section */}
+      <SlideInSection delay={0.2}>
       <section className="w-full py-16 md:py-24 lg:py-32 bg-secondary text-foreground text-center">
         <div className="container px-4 md:px-6 max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6 text-gradient-primary">
@@ -198,6 +211,7 @@ export default function HomePage() {
           </Button>
         </div>
       </section>
+      </SlideInSection>
     </>
   )
 }
