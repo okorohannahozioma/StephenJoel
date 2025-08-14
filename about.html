@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Writer's Name] - About</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+     Lucide Icons CDN 
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">[Writer's Name]</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="index.html#numbers" class="nav-link">Numbers</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="tweets.html" class="nav-link">Viral Tweets</a></li>
+                    <li><a href="highlights.html" class="nav-link">Highlights</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle navigation menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="index.html#services" class="mobile-nav-link">Services</a></li>
+            <li><a href="index.html#numbers" class="mobile-nav-link">Numbers</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About</a></li>
+            <li><a href="tweets.html" class="mobile-nav-link">Viral Tweets</a></li>
+            <li><a href="highlights.html" class="mobile-nav-link">Highlights</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    [Writer's Name] is an accomplished writer with a passion for storytelling and a knack for transforming
+                    complex ideas into engaging narratives. With over a decade of experience in journalism, creative writing,
+                    and content creation, they have a proven track record of producing high-quality, impactful work across
+                    various mediums.
+                </p>
+                <p>
+                    Their work often explores themes of human connection, societal trends, and the intersection of technology
+                    and culture. Known for their meticulous research and evocative prose, [Writer's Name] aims to not only
+                    inform but also to inspire and provoke thought in their readers.
+                </p>
+                <p>
+                    When not writing, [Writer's Name] enjoys reading classic literature, exploring new hiking trails, and
+                    experimenting with new recipes in the kitchen.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 [Writer's Name]. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>

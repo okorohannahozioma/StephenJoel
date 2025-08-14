@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Joel - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+     Lucide Icons CDN 
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Stephen Joel</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#numbers" class="nav-link">Numbers</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="tweets.html" class="nav-link">Viral Tweets</a></li>
+                    <li><a href="highlights.html" class="nav-link">Highlights</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle navigation menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="#services" class="mobile-nav-link">Services</a></li>
+            <li><a href="#numbers" class="mobile-nav-link">Numbers</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About</a></li>
+            <li><a href="tweets.html" class="mobile-nav-link">Viral Tweets</a></li>
+            <li><a href="highlights.html" class="mobile-nav-link">Highlights</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="wavy-background"></div>
+            <div class="container hero-content">
+                <img src="/placeholder.svg?height=180&width=180&text=Writer" alt="Writer's Headshot" class="hero-image">
+                <h1>Hello, I'm Stephen Joel</h1>
+                <p class="subtitle">Crafting compelling narratives and insightful prose that captivate and inspire.</p>
+                <a href="contact.html" class="button primary-button">Get in Touch</a>
+            </div>
+        </section>
+
+        <section id="services" class="section services-section">
+            <div class="container">
+                <h2>My Services</h2>
+                <div class="grid-3">
+                    <div class="card service-card card-hover-effect">
+                        <h3>Content Strategy</h3>
+                        <p>Developing comprehensive content plans that align with your goals and resonate with your audience.</p>
+                    </div>
+                    <div class="card service-card card-hover-effect">
+                        <h3>Copywriting</h3>
+                        <p>Crafting persuasive and engaging copy for websites, marketing materials, and advertisements.</p>
+                    </div>
+                    <div class="card service-card card-hover-effect">
+                        <h3>Ghostwriting</h3>
+                        <p>Bringing your ideas to life with expertly written articles, books, and speeches under your name.</p>
+                    </div>
+                    <div class="card service-card card-hover-effect">
+                        <h3>Editing & Proofreading</h3>
+                        <p>Refining your text for clarity, coherence, grammar, and overall impact.</p>
+                    </div>
+                    <div class="card service-card card-hover-effect">
+                        <h3>Blog & Article Writing</h3>
+                        <p>Producing well-researched and engaging blog posts and articles on various topics.</p>
+                    </div>
+                    <div class="card service-card card-hover-effect">
+                        <h3>Technical Writing</h3>
+                        <p>Simplifying complex information into clear, concise, and user-friendly documentation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="numbers" class="section numbers-section">
+            <div class="container">
+                <h2>The Numbers Don't Lie</h2>
+                <div class="grid-3">
+                    <div class="card number-card">
+                        <span class="number" data-target="10">0</span><span class="suffix">+</span>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="card number-card">
+                        <span class="number" data-target="250">0</span><span class="suffix">+</span>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="card number-card">
+                        <span class="number" data-target="95">0</span><span class="suffix">%</span>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 [Writer's Name]. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide Icons after the DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
