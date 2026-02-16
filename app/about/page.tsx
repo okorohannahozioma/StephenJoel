@@ -9,7 +9,7 @@ export default function AboutPage() {
         </h2>
         <div className="grid lg:grid-cols-2 items-center gap-12">
           <Image
-            src="/about-img.jpg"
+            src="/about-img.jpeg"
             width={500}
             height={500}
             alt="Writer's Headshot"

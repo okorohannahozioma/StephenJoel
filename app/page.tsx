@@ -20,7 +20,7 @@ export default function HomePage() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-x-12 container px-6 md:px-12 relative z-10 text-center md:text-left">
   {/* Image */}
   <Image
-    src="/Stephen-img.jpg"
+    src="/hero-img.jpeg"
     width={300}
     height={250}
     alt="Writer's Headshot"
@@ -170,7 +170,7 @@ export default function HomePage() {
              <Card className="bg-card border-secondary rounded-lg p-6 text-center">
               <CardContent className="flex flex-col items-center justify-center h-full">
                 <div className="text-6xl font-extrabold mb-2">
-                  <NumberCounter target={706} suffix="m+" />
+                  <NumberCounter target={900} suffix="m+" />
                 </div>
                 <p className="text-muted-foreground text-lg">Yearly Impressions</p>
               </CardContent>
